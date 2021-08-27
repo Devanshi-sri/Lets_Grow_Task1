@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial scal=1.0">
+    <title>ZIPPY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<script>
+    $(document).ready(function(){
+  
+  $("a").on('click', function(event) {
+
+    
+    if (this.hash !== "") {
+      
+      event.preventDefault();
+
+      
+      var hash = this.hash;
+
+      
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
+
+<body>
+    <nav class="navbar">
+        <h1 class="logo" style="font-size: 30px; padding-right: 300px;">ZIPPY</h1>
+        <ul class="nav-links" style="color: white; font-size: medium;">
+            <li class="n"><a href="#Home">HOME</a></li>
+            <li><a href="#Project">PROJECT</a></li>
+            <li><a href="#Pricing">PRICING</a></li>
+            <li><a href="#Team">TEAM</a></li>
+            <li><a href="#Blogs">BLOGS</a></li>
+            <li><a href="#Contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+
+    <header>
+        <div class="header-container">
+            <h1 style="font-size: 50px; color: white;"><br><br><br>One page promising to <br>
+            fill all your need!</h1><br>
+            <!--<div class="line"></div>-->
+            <h2 style="color: white; font-size: medium; font-weight: lighter;"> This is Photoshop's version of Lorem Ispum. Proin <br>gravinda nibh vel velit auctor aliquet.</h2><br>
+            <a href="#" class="ctn">Learn More</a>
+            <a href="#" class="ctn1">Learn More</a>
+        </div>
+
+    </header>
+
+
+<div class="welcome" style="padding-left: 70px; padding-top: 30px;">
+    <h1 style="font-weight: bolder; font-size: 40px;">Welcome to Zippy</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, earum! Perferendis cupiditate veritatis
+        suscipit similique dignissimos. Impedit voluptatibus iure neque dolore commodi nulla vero distinctio.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, earum! Perferendis cupiditate veritatis
+        suscipit similique dignissimos. Beatae, earum! Perferendis cupiditate veritatis
+        suscipit similique dignissimos.
+    </p>
+    <img src="images/umbrella2.jpg.png" alt="">
+
+</div>
+<div class="about">
+    <div class="card" id="cardid-1">
+        <img src="images/download (1).jpg" alt=""><br><br>
+        <h3>NOTIFICATION</h3><br>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque eos eius nesciunt quo consequuntur
+            accusamus, enim facere pariatur unde libero.</p><br>
+        <button type="button"  style=" font-size: medium; font-weight: bolder;">Learn More</button>
+    </div>
+    
+    <div class="card" id="cardid-2">
+        <img src="images/chat.png" alt=""><br><br>
+        <h3>MESSAGE</h3><br>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque eos eius nesciunt quo consequuntur
+            accusamus, enim facere pariatur unde libero.</p><br>
+        <button type="button" style=" font-size: medium; font-weight: bolder;">Learn More</button>
+    </div>
+    <div class="card" id="cardid-3">
+        <img src="images/download (2).jpg" alt=""><br><br>
+        <h3>NOTES</h3><br>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque eos eius nesciunt quo consequuntur
+            accusamus, enim facere pariatur unde libero.</p><br>
+        <button type="button"  style=" font-size: medium; font-weight: bolder;">Learn More</button>
+    </div>
+</div>
+<div  id="Project">
+<div class="heading">
+    <h1 style="text-align: center;">Projects</h1>
+</div>
+<div class="projects" style="width: 100%;">
+    <div class="proj" id="projid-1">
+        <img src="images/proj1.jpeg" alt="" width="1000px" height="500px">
+
+        <h3 style="padding-left: 20px;  padding-top: 20px;">PROJECT NAME</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quas iste reiciendis architecto beatae
+            impedit. Ad magni iste laboriosam unde!</p>
+        <button type="button">Launch Case Study</button>
+    </div>
+    <div class="proj" id="projid-2">
+        <img src="images/proj3 (2).jpeg" alt="">
+        <h3 style="padding-left: 20px; padding-top: 20px;">PROJECT NAME</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quas iste reiciendis architecto beatae
+            impedit. Ad magni iste laboriosam unde!</p>
+        <button type="button">Launch Case Study</button>
+    </div>
+    <div class="proj" id="projid-3">
+        <img src="images/proj3.jpeg" alt="">
+        <h3 style="padding-left: 20px; padding-top: 20px;">PROJECT NAME</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quas iste reiciendis architecto beatae
+            impedit. Ad magni iste laboriosam unde!</p>
+        <button type="button">Launch Case Study</button>
+    </div>
+    
+</div>
+</div>
+<div id="Pricing">
+<div class="price-table">
+    <h1>Pricing Table </h1>
+</div>
+<div class="table">
+    <div class="plan" id="standard">
+        <h3>STANDARD PLAN</h3>
+        <h4>Free</h4>
+        <p>2 GB Available</p>
+        <p>access to 4 classes/week</p>
+        <p>No access to blogs</p>
+        <p>Outgoing Ads</p>
+        <button type="button" style="font-weight: bolder;">BUY</button>
+    </div>
+    <div class="plan" id="business">
+        <h3>BUSINESS PLAN</h3>
+        <h4>19$/Month</h4>
+        <p>10 GB Available</p>
+        <p>Unlimited Access to classes</p>
+        <p>Access to exclusive Blog content</p>
+        <p>Ads Free</p>
+        <button type="button" style="font-weight: bolder;">BUY</button>
+    </div>
+    <div class="plan" id="premium">
+        <h3>PREMIUM PLAN</h3>
+        <h4>14$/Month</h4>
+        <p>100 GB Available</p>
+        <p>Unlimited Access to classes</p>
+        <p>Access to exclusive Blog content</p>
+        <p>Ads Free</p>
+
+        <button type="button" style="font-weight: bolder;">BUY</button>
+    </div>
+</div>
+</div>
+<div class="videocontainer">
+    <h1>Video Projects</h1>
+    <video src="https://biteable.com/static-assets/homepage/HubpageVideo_Marketing_16x9_02.mp4" width="450" height="400" controls></video>
+    <video src="https://biteable.com/static-assets/homepage/HubpageVideo_Marketing_16x9_02.mp4" width="450" height="400" controls></video>
+    <video src="https://biteable.com/static-assets/homepage/HubpageVideo_Marketing_16x9_02.mp4" width="450" height="400" controls></video>
+    
+</div>
+<div id="Team"></div>
+<div class="teamcontainer">
+    <h1>Zippy Team</h1>
+    <div class="members"">
+        <div id="mem-1">
+            <img src="images/mem1.png" alt="" class="image">
+            <div class="middle">
+                <div class="social"><img src="images/insta.jpeg" alt=""></div>
+            </div>
+            <p class="name">Jimmy Simth</p>
+            <p class="role">Creative Head</p>
+        </div>
+        <div id="mem-2">
+            <img src="images/mem2.png" alt="" class="image">
+            <div class="middle">
+                <div class="social"><img src="images/g+.png" alt="" width="50px" height="50px"></div>
+            </div>
+            <p class="name">Chris Philips</p>
+            <p class="role">Art Director</p>
+        </div>
+        <div id="mem-3">
+            <img src="images/mem3.png" alt="" class="image">
+            <div class="middle">
+                <div class="social"><img src="images/fb-logo.jpg" alt=""></div>
+            </div>
+            <p class="name">Sara Jhonson</p>
+            <p class="role">Senior Designer</p>
+        </div>
+        <div id="mem-4">
+            <img src="images/mem4.png" alt="" class="image">
+            <div class="middle">
+                <div class="social"><img src="images/insta.jpeg" alt=""></div>
+            </div>
+            <p class="name">Jimmy Simth</p>
+            <p class="role">Marketing Manager</p>
+        </div>
+        <div id="mem-5">
+            <img src="images/mem5.png" alt="" class="image">
+            <div class="middle">
+                <div class="social"><img src="images/g+.png" alt="" width="50px" height="50px"></div>
+            </div>
+            <p class="name">Chris Philips</p>
+            <p class="role">SEO MONSTER </p>
+        </div>
+        <div id="mem-6">
+            <img src="images/mem6.png" alt="" class="image">
+            <div class="middle">
+                <div class="social"><img src="images/fb-logo.jpg" alt=""></div>
+            </div>
+            <p class="name">Sara Jhonson</p>
+            <p class="role">Senior Designer</p>
+        </div>
+    </div>
+</div>
+</div>
+<div class="slidercontainer">
+    <h1>Life at Zippy</h1>
+    <div id="slider">
+        <figure>
+            <img src="images/people.jpg" alt>
+            <img src="images/people1.jpg" alt>
+            <img src="images/people2.jpg" alt>
+        </figure>
+    </div>
+</div>
+
+<div class="signup">
+    <h1>Newsletter Signup</h1>
+    <div class="signupcontainer">
+        <input type="email" placeholder="abc@example.com">
+        <button type="button">SIGN UP</button>
+    </div>
+
+</div>
+
+<div id="Blogs"></div>
+<h1 class="blogheading">
+    Blogs
+</h1>
+<div class="blogcontainer">
+    <div class="blogcard">
+        <img src="images/blog1.jpg" alt="">
+        <h3>
+            LOREM IPSUM DOLOR<br> SIT AMSET
+        </h3>
+        <p class="date">15 Jan,2015</p>
+        <p class="bloginfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias mollitia, consectetur
+            nihil iste repellendus dicta?</p>
+        <button type="button">Read More</button>
+    </div>
+    <div class="blogcard">
+        <img src="images/blog2.jpg" alt="">
+        <h3>
+            LOREM IPSUM DOLOR<br> SIT AMSET
+        </h3>
+        <p class="date">15 Jan,2015</p>
+        <p class="bloginfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias mollitia, consectetur
+            nihil iste repellendus dicta?</p>
+        <button type="button">Read More</button>
+    </div>
+    <div class="blogcard">
+        <img src="images/blog1.jpg" alt="">
+        <h3>
+            LOREM IPSUM DOLOR<br> SIT AMSET
+        </h3>
+        <p class="date">15 Jan,2015</p>
+        <p class="bloginfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias mollitia, consectetur
+            nihil iste repellendus dicta?</p>
+        <button type="button">Read More</button>
+    </div>
+</div>
+</div>
+<div id="Contact"></div>
+<div class="contact-in">
+    <div class="contact-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227822.55035758688!2d80.80242651696383!3d26.84862299347323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd991f32b16b%3A0x93ccba8909978be7!2sLucknow%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1628430940061!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="contact-form" style="padding-left: 40px; padding-top: 20px; padding-bottom: 30px;">
+        <h1>Contact</h1>
+
+        <form style="padding-right: 50px;">
+            <label for="name">NAME</label><br>
+            <input type="text" class="contact-form-txt"><br>
+            <label for="email">EMAIL ADDRESS</label><br>
+            <input type="email" class="contact-form-txt"><br>
+            <label for="sub">SUBJECT</label><br>
+            <input type="text" class="contact-form-txt"><br>
+            <label for="Message">MESSAGE</label><br>
+            <textarea name="msg" class="contact-form-textarea"></textarea><br>
+            <input type="submit" name="Submit" class="contact-form-btn"/>
+
+        </form>
+    </div>
+
+    </div>
+</div>
+<div class="end">
+    <div class="endcards">
+        <p style="font-weight: bold;">OFFICE ADDRESS</p>
+        <p> Lorem Ipsum dolor,234<br>1200 Connecture <br>ApartmentS
+        </p>
+    </div>
+    <div class="endcards">
+        <p style="font-weight: bold;">FOLLOW US</p>
+        <div class="logos">
+            <img src="images/fb-logo.jpg" alt="">
+            <img src="images/insta.jpeg" alt="">
+            <img src="images/twitter.jpg" alt="">
+            <img src="images/g+.png" alt="">
+            
+        </div>
+    </div>
+    <div class="endcards">
+        <p style="font-weight: bold;">CONTACT US</p>
+        <p>+91 9876543201</p>
+        <p>enquiry@zippy.com</p>
+        <p>zippy@gmail.com</p>
+    </div>
+</div>
+
+<script>
+
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 10000);
+    }
+
+
+</script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navlinks = document.querySelector('.nav-links');
+
+        menuBtn.addEventListener('click', () => {
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+
+
+
+
+</html>
